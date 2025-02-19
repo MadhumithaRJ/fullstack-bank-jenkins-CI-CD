@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/jaiswaladi246/fullstack-bank.git'
+                git credentialsId: 'Git-cred', branch: 'main', url: 'https://github.com/MadhumithaRJ/fullstack-bank-jenkins-CI-CD.git'
             }
         }
         
